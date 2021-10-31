@@ -32,7 +32,7 @@ int main()
 	else if (m == 2)
 	{
 		do {
-			if ((abs(A) % 2 == 0) && A<0) {
+			if ((abs(A) % 2 == 0) && A<0 && A<=B) {
 				cout << A << endl;
 			}
 			A++;

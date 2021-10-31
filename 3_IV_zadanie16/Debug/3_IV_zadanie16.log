@@ -1,2 +1,3 @@
-﻿  3_IV_zadanie16.cpp
-  3_IV_zadanie16.vcxproj -> C:\Users\kiril\Desktop\домашняя работа\I_zadanie12\Debug\3_IV_zadanie16.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (3_IV_zadanie16.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  3_III_zadanie16.cpp
+  3_IV_zadanie16.vcxproj -> C:\Users\kiril\Desktop\домашняя работа\I_zadanie12\Debug\3_III_zadanie16.exe

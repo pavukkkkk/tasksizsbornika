@@ -10,12 +10,15 @@ int main()
 	double x, y;
 	cout << "ВВЕДИТЕ КООРДИНАТЫ ТОЧКИ: ";
 	cin >> x >> y;
-	if ((y >= -1*x) && x*x+y*y<=100){
-		cout << "YES";
+	if ((y > -1*x) && x*x+y*y<100){
+		cout << "Da";
 
 	}
+	else if ((y == -1 * x) && x * x + y * y == 100) {
+		cout << "Na granice";
+	}
 	else {
-		cout << "NO";
+		cout << "Net";
 	}
 }
 //тесты

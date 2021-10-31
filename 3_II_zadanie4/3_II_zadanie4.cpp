@@ -17,5 +17,6 @@ int main()
 	case 12: cout << "ДАМА"; break;
 	case 13: cout << "КОРОЛЬ"; break;
 	case 14: cout << "ТУЗ"; break;
+	default: cout << "некорректное значение"; break;
 	}
 }

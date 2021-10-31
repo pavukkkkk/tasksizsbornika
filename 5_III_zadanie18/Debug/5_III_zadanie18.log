@@ -1,0 +1,5 @@
+﻿  5_III_zadanie18.cpp
+C:\Users\kiril\Desktop\домашняя работа\5_III_zadanie18\5_III_zadanie18.cpp(5,32): warning C4101: a: неиспользованная локальная переменная
+C:\Users\kiril\Desktop\домашняя работа\5_III_zadanie18\5_III_zadanie18.cpp(5,14): warning C4101: x: неиспользованная локальная переменная
+C:\Users\kiril\Desktop\домашняя работа\5_III_zadanie18\5_III_zadanie18.cpp(5,17): warning C4101: n: неиспользованная локальная переменная
+  5_III_zadanie18.vcxproj -> C:\Users\kiril\Desktop\домашняя работа\I_zadanie12\Debug\5_III_zadanie18.exe

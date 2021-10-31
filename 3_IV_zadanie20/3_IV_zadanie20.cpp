@@ -7,7 +7,7 @@ int main()
 {
     int A = 5;
     int C = 3;
-    for (A; A > -2; A-=1) {
+    for (; A > -2; A-=1) {
         int B = 0;
         for (int B=0; B < A; B++) {
             cout << "2 ";
@@ -18,7 +18,7 @@ int main()
             cout << D++<<" ";
         }
         cout << endl;
-        C -= 1;
+        C -= 1; 
     }
 }
 
