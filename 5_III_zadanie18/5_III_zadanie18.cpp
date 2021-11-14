@@ -8,10 +8,16 @@ int main()
 	cin >> e;
 	b = -1/4.;
 	long long i = 1;
-	while (abs(b)+t>e){
-		p += b;
-		i++;
-		b /=-4;
+	if (e > 0) {
+		while (abs(b) + t > e) {
+			p += b;
+			i++;
+			b /= -4;
+		}
 	}
-	cout << "p= " << p << endl;
+		cout << "p= " << p << endl;
+	
 }
+//1 otvet: 0
+//0.001 otvet: -0.199219
+//0.1 otvet: -0.25

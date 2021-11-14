@@ -14,11 +14,11 @@ int main()
 		cout << "Da";
 
 	}
-	else if ((y == -1 * x) && x * x + y * y == 100) {
-		cout << "Na granice";
+	else if ((y < -1 * x) || x * x + y * y > 100) {
+		cout << "Net";
 	}
 	else {
-		cout << "Net";
+		cout << "Na granice";
 	}
 }
 //тесты

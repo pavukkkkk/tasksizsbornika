@@ -1,0 +1,6 @@
+﻿  10_I_zadanie12.cpp
+C:\Users\kiril\Desktop\домашняя работа\10_I_zadanie12\10_I_zadanie12.cpp(3,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\kiril\Desktop\домашняя работа\10_I_zadanie12\10_I_zadanie12.cpp(4,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\kiril\Desktop\домашняя работа\10_I_zadanie12\10_I_zadanie12.cpp(5,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\kiril\Desktop\домашняя работа\10_I_zadanie12\10_I_zadanie12.cpp(15,23): warning C4244: инициализация: преобразование "double" в "unsigned int", возможна потеря данных
+  10_I_zadanie12.vcxproj -> C:\Users\kiril\Desktop\домашняя работа\I_zadanie12\Debug\10_I_zadanie12.exe
