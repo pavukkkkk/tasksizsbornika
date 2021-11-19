@@ -1,4 +1,4 @@
 ﻿  6_III_zadainie7.cpp
-C:\Users\kiril\Desktop\домашняя работа\6_III_zadainie7\6_III_zadainie7.cpp(6,12): warning C4101: a: неиспользованная локальная переменная
-C:\Users\kiril\Desktop\домашняя работа\6_III_zadainie7\6_III_zadainie7.cpp(6,15): warning C4101: b: неиспользованная локальная переменная
+C:\Users\kiril\Desktop\домашняя работа\6_III_zadainie7\6_III_zadainie7.cpp(30,12): warning C4101: a: неиспользованная локальная переменная
+C:\Users\kiril\Desktop\домашняя работа\6_III_zadainie7\6_III_zadainie7.cpp(30,15): warning C4101: b: неиспользованная локальная переменная
   6_III_zadainie7.vcxproj -> C:\Users\kiril\Desktop\домашняя работа\I_zadanie12\Debug\6_III_zadainie7.exe

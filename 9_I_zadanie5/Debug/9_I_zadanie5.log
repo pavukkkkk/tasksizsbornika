@@ -1,5 +1,5 @@
 ﻿  9_I_zadanie5.cpp
 C:\Users\kiril\Desktop\домашняя работа\9_I_zadanie5\9_I_zadanie5.cpp(3,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
 C:\Users\kiril\Desktop\домашняя работа\9_I_zadanie5\9_I_zadanie5.cpp(4,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-C:\Users\kiril\Desktop\домашняя работа\9_I_zadanie5\9_I_zadanie5.cpp(16,9): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\kiril\Desktop\домашняя работа\9_I_zadanie5\9_I_zadanie5.cpp(15,9): warning C4018: <: несоответствие типов со знаком и без знака
   9_I_zadanie5.vcxproj -> C:\Users\kiril\Desktop\домашняя работа\I_zadanie12\Debug\9_I_zadanie5.exe

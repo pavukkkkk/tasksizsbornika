@@ -1,4 +1,4 @@
 ﻿  7_III_zadanie7.cpp
-C:\Users\kiril\Desktop\домашняя работа\7_III_zadanie7\7_III_zadanie7.cpp(16,25): warning C4244: аргумент: преобразование "__int64" в "const unsigned int", возможна потеря данных
+C:\Users\kiril\Desktop\домашняя работа\7_III_zadanie7\7_III_zadanie7.cpp(16,33): warning C4244: аргумент: преобразование "__int64" в "const unsigned int", возможна потеря данных
 C:\Users\kiril\Desktop\домашняя работа\7_III_zadanie7\7_III_zadanie7.cpp(19,19): warning C4244: аргумент: преобразование "__int64" в "const unsigned int", возможна потеря данных
   7_III_zadanie7.vcxproj -> C:\Users\kiril\Desktop\домашняя работа\I_zadanie12\Debug\7_III_zadanie7.exe

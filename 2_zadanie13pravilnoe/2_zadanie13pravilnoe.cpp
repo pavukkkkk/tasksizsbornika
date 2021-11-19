@@ -2,14 +2,19 @@
 using namespace std;
 
 void f(int &j) {
-    j = (j % 10) * 100 + j / 10 % 10 * 10 + j / 100;
+    int e = 1;
+    if (j < 0) {
+        e = -1;
+    }
+    j = abs(j);
+    j = e*((j % 10) * 100 + j / 10 % 10 * 10 + j / 100);
 }
 
 int main()
 {
     int t;
     cin >> t;
-    if (99 < t && t < 1000) {
+    if (99 < abs(t) && abs(t) < 1000) {
         f(t);
     }
     cout << t;
@@ -17,4 +22,4 @@ int main()
     
 //100 otvet: 1
 //123 otvet: 321
-//120 otvet: 21
+//-120 otvet: -21

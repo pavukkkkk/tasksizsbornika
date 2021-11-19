@@ -6,11 +6,10 @@ int main()
     int n, a,g,v;
     long long s = 1;
     cin >> v;
-    cout << "vvedite kolichestvo elementov: ";
-    cin >> n;
-    int* m = new int[n];
     if (v == 0) {
-        int m[5000];
+        cout << "vvedite kolichestvo elementov: ";
+        cin >> n;
+        int* m = new int[n];
         cout << "vvedite elementi : " << endl;
         for (int i = 0; i < n; i++) {
             cin >> a;
@@ -23,19 +22,31 @@ int main()
         }
     }
     else{
-        int** w = new int* [1];
-        w[0] = new int[n];
+        int u;
+        cout << "vvedite kolichestvo strochek: ";
+        cin >> n;
+        cout << "vvedite kolichestvo stolbcov: ";
+        cin >> u;
         cout << "vvedite elementi : " << endl;
+        int** w = new int* [n];
         for (int i = 0; i < n; i++) {
-            cin >> a;
-            w[0][i] = a;
+            w[i] = new int[u];
+            for (int j = 0; j < u; j++) {  
+                cin >> w[i][j];
+            }
         }
 
         for (int i = 0; i < n; i++) {
-            cout << w[0][i];
-            s *= w[0][i];
+            for (int j = 0; j < u; j++) {
+                s*= w[i][j];
+            }
         }
     }
-    cout << "kolichestvo par : " << s;
+    if (s > 99 && s < 1000) {
+        cout << "YES";
+    }
+    else {
+        cout << "NO";
+    }
 }
 

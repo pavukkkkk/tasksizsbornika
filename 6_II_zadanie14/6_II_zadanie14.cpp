@@ -23,5 +23,6 @@ int main()
             }
         }
     }
+    delete[] m;
     cout << "max otricatelniy : " << ma;
 }

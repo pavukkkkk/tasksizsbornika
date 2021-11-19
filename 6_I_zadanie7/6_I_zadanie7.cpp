@@ -6,10 +6,10 @@ int main()
     int n,a,k=0,v;
     long double s=0;
     cin >> v;
-        cout << "vvedite kolichestvo elementov: ";
-        cin >> n;
-        cout << "vvedite elementi : " << endl;
         if (v == 0) {
+            cout << "vvedite kolichestvo elementov: ";
+            cin >> n;
+            cout << "vvedite elementi : " << endl;
             int m[10000];
         for (int i = 0; i < n; i++) {
             cin >> a;
@@ -27,24 +27,34 @@ int main()
         }
         cout << "sred arifm: " << s;
     }
-    else {
-            int w[1][1000];
-        for (int i = 0; i < n; i++) {
-            cin >> a;
-            *(*(w)+i) = a;
-        }
-        for (int i = 0; i < n; i++) {
-
-            if (*(*(w)+i) < 0) {
-                s += *(*(w)+i);
-                k++;
+        else {
+            int u;
+            cout << "vvedite kolichestvo strochek: ";
+            cin >> n;
+            cout << "vvedite kolichestvo stolbcov: ";
+            cin >> u;
+            cout << "vvedite elementi : " << endl;
+            int w[100][100];
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < u; j++) {
+                    cin >> w[i][j];
+                }
             }
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < u; j++) {
+
+                    if (w[i][j] < 0) {
+                        s += w[i][j];
+                        k++;
+                    }
+                }
+
+            }
+            if (k > 0) {
+                s = s / k;
+            }
+            cout << "sred arifm: " << s;
         }
-        if (k > 0) {
-            s = s / k;
-        }
-        cout << "sred arifm: " << s;
-    }
 }
 /*1 2 3 4 5 otvet 0
 -1 -2 -3 -4 -5 otvet -3

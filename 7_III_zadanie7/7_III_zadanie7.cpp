@@ -4,7 +4,7 @@ using namespace std;
 #include <string>
 int main()
 {
-    string s;
+    string s, s2=",.:;!? ";
     char s1;
     cout << "vvedite stroku: ";
     getline(cin,s);
@@ -13,7 +13,7 @@ int main()
     long long int i = 0, k = 0;
 
     while (true) {
-        i = s.find(" ", i);
+        i = s.find_first_of(s2, i);
         if (i < s.size()) {
             i++;
             if (s[i]==s1)

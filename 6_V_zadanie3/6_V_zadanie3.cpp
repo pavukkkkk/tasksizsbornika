@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int n, b,k1,k2,k;
-    cout << "vvedite razmer marici n: ";
+    cout << "vvedite razmer massiva n: ";
     cin >> n;
     cout << "vvedite nomer k1 & k2(nomera vkluchitelno): ";
     cin >> k1 >> k2;
@@ -15,12 +15,19 @@ int main()
         a[i] = b;
     }
     int h = 0;
-    k = k2 - k1;
-    for (int j = k1-1; j < n-1; j++) {
-                a[j] = a[j + k+1];
+    while (h < n) {
+        if (a[h] <k2 && a[h]>k1) {
+            for (int j = h; j < n - 1; j++) {
+                a[j] = a[j + 1];
             }
+            n = n - 1;
+        }
+        else {
+            h++;
+        }
+    }
     cout << "novaya matrica: " << endl;
-    for (int i = 0; i < n-k-1; i++) {
+    for (int i = 0; i < n; i++) {
         cout << a[i] << " ";
     }
     cout << endl;
