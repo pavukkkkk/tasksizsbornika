@@ -25,6 +25,7 @@ int main(){
 			a[0].y += 5;
 		}
 	}
+	cout << "koordinati tochki: ";
 	cout<< a[0].x<<" "<< a[0].y<<endl;
 }
 /*
