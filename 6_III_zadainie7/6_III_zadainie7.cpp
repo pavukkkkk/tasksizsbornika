@@ -24,70 +24,61 @@ void vivod(int** m, int n) {
     }
 }
 
+
 int main()
 {
-    int n,k1,k2,s;
+    int n;
     cout << "vvedite razmer marici n: ";
     cin >> n;
-    cout << "vvedite nomer k1 & k2(nomera vkluchitelno): ";
-    cin >> k1 >> k2;
-    int** m = vvod(n);
-    cout<<"Ishodnaya matrica: \n";
+    int **m = vvod(n);
     vivod(m,n);
     int* d = new int[n];
-    for (int j = 0; j < n; j++) {
-        s = 1;
-        for (int i = k1-1; i < k2; i++) {
-            s *= m[i][j];
-            }
-        *(d + j) = s;
-        }
-    cout << "massiv proizvedenyi: ";
-
-    for (int i = 0; i < n; i++) {
-        cout<<*(d+i)<<" ";
+    if (n % 2 == 0) {
+        d = m[n / 2 - 1];
+        m[n / 2 - 1] = m[n / 2];
+        m[n / 2] = d;
     }
-    cout << endl;
+    else {
+        d = m[0];
+        m[0] = m[n / 2];
+        m[n / 2] = d;
+    }
 
+  
+    vivod(m, n);
     for (int i = 0; i < n; i++) {
         delete[] m[i];
     }
     delete[] m;
-    delete[] d;
 }
 /*
  vvedite razmer marici n: 3
- vvedite nomer k1 & k2(nomera vkluchitelno): 1 2
  vvedite maricu:
  1 2 3
- 4 5 6
- 7 8 9
- Ishodnaya matrica:
+ 3 4 5
+ 6 7 8
  novaya matrica:
  1    2    3
- 4    5    6
- 7    8    9
- massiv proizvedenyi: 4 10 18
- vvedite razmer marici n: 3
- vvedite nomer k1 & k2(nomera vkluchitelno): 1 1
- vvedite maricu:
- 1 2 3
- 4 5 6
- 7 8 9
- Ishodnaya matrica:
+ 3    4    5
+ 6    7    8
  novaya matrica:
+ 3    4    5
  1    2    3
- 4    5    6
- 7    8    9
- massiv proizvedenyi: 1 2 3
- vvedite razmer marici n: 2
- vvedite nomer k1 & k2(nomera vkluchitelno): 1 2
+ 6    7    8
+ vvedite razmer marici n: 4
  vvedite maricu:
- 0 1
- 2 0
- Ishodnaya matrica:
+ 1 2 3 4
+ 5 6 7 8
+ 9 10 11 12
+ 13 14 15 16
  novaya matrica:
- 0    1
- 2    0
- massiv proizvedenyi: 0 0
+ 1    2    3    4
+ 5    6    7    8
+ 9    10    11    12
+ 13    14    15    16
+ novaya matrica:
+ 1    2    3    4
+ 9    10    11    12
+ 5    6    7    8
+ 13    14    15    16
  */
