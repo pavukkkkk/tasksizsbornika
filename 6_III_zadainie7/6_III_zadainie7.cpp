@@ -15,7 +15,7 @@ int** vvod(int n) {
 }
 
 void vivod(int** m, int n) {
-    cout << "novaya matrica:  " << endl;;
+    
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             cout << m[i][j] << "\t";
@@ -31,6 +31,7 @@ int main()
     cout << "vvedite razmer marici n: ";
     cin >> n;
     int **m = vvod(n);
+    cout << "staraya matrica:  " << endl;;
     vivod(m,n);
     int* d = new int[n];
     if (n % 2 == 0) {
@@ -44,7 +45,7 @@ int main()
         m[n / 2] = d;
     }
 
-  
+    cout << "novaya matrica:  " << endl;;
     vivod(m, n);
     for (int i = 0; i < n; i++) {
         delete[] m[i];
@@ -57,7 +58,7 @@ int main()
  1 2 3
  3 4 5
  6 7 8
- novaya matrica:
+ staraya matrica:
  1    2    3
  3    4    5
  6    7    8
@@ -71,7 +72,7 @@ int main()
  5 6 7 8
  9 10 11 12
  13 14 15 16
- novaya matrica:
+ staraya matrica:
  1    2    3    4
  5    6    7    8
  9    10    11    12
