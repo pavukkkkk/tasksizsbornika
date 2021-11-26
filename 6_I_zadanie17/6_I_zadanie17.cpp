@@ -20,6 +20,11 @@ int main()
                 s *= *(m + i);
             
         }
+        for (int i = 0; i < n; i++) {
+                cout<<m[i]<<"\t";
+            }
+            cout<<endl;
+        
     }
     else{
         int u;
@@ -41,7 +46,14 @@ int main()
                 s*= w[i][j];
             }
         }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < u; j++) {
+                cout<<w[i][j]<<"\t";
+            }
+            cout<<endl;
+        }
     }
+    
     if (abs(s) > 99 && abs(s) < 1000) {
         cout << "YES";
     }
