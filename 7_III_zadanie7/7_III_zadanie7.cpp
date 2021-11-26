@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <iomanip>
 using namespace std;
 #include <string>
@@ -12,9 +12,15 @@ int main()
     cin >> s1;
     long long int i = 0, k = 0;
 
+    if (s[i]==s1)
+    k++;
+    i++;
     while (true) {
         i = s.find_first_of(s2, i);
         if (i < s.size()) {
+            if (s[i]!=' '){
+                i++;
+            }
             i++;
             if (s[i]==s1)
             k++;
@@ -24,6 +30,6 @@ int main()
             break;
         }
     }
-    cout << "kolichestvo slov: ";
+    cout << "kolichestvo slov: "<<endl;
     cout << k;
 }
