@@ -15,7 +15,6 @@ int** vvod(int n) {
 }
 
 void vivod(int** m, int n) {
-    cout << "novaya matrica:  " << endl;;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             cout << m[i][j] << "\t";
@@ -63,7 +62,7 @@ int main()
  4 5 6
  7 8 9
  Ishodnaya matrica:
- novaya matrica:
+
  1    2    3
  4    5    6
  7    8    9
@@ -75,7 +74,7 @@ int main()
  4 5 6
  7 8 9
  Ishodnaya matrica:
- novaya matrica:
+
  1    2    3
  4    5    6
  7    8    9
