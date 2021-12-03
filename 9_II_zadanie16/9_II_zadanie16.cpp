@@ -7,13 +7,12 @@ int main()
 {
     ifstream in("f.txt");
     ofstream out("g.txt");
-    string s1,s2;
+    int s1,s2;
    
-    while (in.peek() != EOF)
+    while (in>>s1>>s2)
     {
-        getline(in, s1);
-        getline(in, s2);
-        out << (atoi(s1.c_str()) + atoi(s2.c_str()))/2. << endl;
+        
+        out << (s1+s2)/2. << endl;
 
 
     }
@@ -21,3 +20,4 @@ int main()
     out.close();
     return 0;
 }
+
