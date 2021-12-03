@@ -1,18 +1,17 @@
 #include <iostream>
 using namespace std;
-#include "fstream"
-#include "string"
+#include <fstream>
+#include <string>
 
 int main()
 {
     ifstream in("f.txt");
     string s;
     long int m=0,k = 0,i=0;
-    while (in.peek() != EOF)
+    while (getline(in, s))
     {
         i++;
-        getline(in, s);
-        if (m < s.size()) {
+        if (m < s.length()) {
             m = s.length();
             k = i;
         }
