@@ -27,7 +27,8 @@ int main(){
     a[0].x = 0;
     a[0].y = 0;
     for (int i = 0; i < k;i++) {
-        cin >> a[i].x>>a[i].y;
+        a[i].inputx();
+        a[i].inputy();
     }
     int vsego=0;
     int t=0;
@@ -59,20 +60,16 @@ int main(){
  0 1
  1 0
  1 1
- 1
- 4
- 4
- 4
- 4
 
+ luchsaya tochka: 5 10
+ 
+ 
  vvedite kol-vo tochek: 3
  vvedite radius: 1
  vvedite koordinati: 0 0
  1 1
  2 3
- 2
- 2
- 1
+ 
  luchsaya tochka: 2 3
  */
  
