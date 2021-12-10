@@ -1,50 +1,81 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
-#include "fstream";
-#include "string";
-#include "cmath";
+#include <fstream>
+#include <string>
+#include <cmath>
 
 struct point {
-	int x, y;
+    int x, y;
+    void inputx(){
+        cin>>x;
+    }
+    void inputy(){
+        cin>>y;
+    }
+    
 };
 int main(){
-	double n, r;
-	cout << "vvedite kol-vo tochek: ";
-	cin >>n;
-	cout << "vvedite radius: ";
-	cin >> r;
-	
-	point* a = new point[n];
-	cout << "vvedite koordinati: ";
-	a[0].x = 0;
-	a[0].y = 0;
-	for (int i = 1; i < n+1;i++) {
-		cin >> a[i].x>>a[i].y;
-		while  (pow(a[i].x - a[0].x, 2) + pow(a[i].y - a[0].y, 2) <= r * r) {
-			a[0].x += 5;
-			a[0].y += 5;
-		}
-	}
-	cout << "koordinati tochki: ";
-	cout<< a[0].x<<" "<< a[0].y<<endl;
+    int k=0;
+    double  r;
+    cout << "vvedite kol-vo tochek: ";
+    cin >>k;
+    cout << "vvedite radius: ";
+    cin >> r;
+    
+    point* a = new point[k];
+    cout << "vvedite koordinati: ";
+    a[0].x = 0;
+    a[0].y = 0;
+    for (int i = 0; i < k;i++) {
+        cin >> a[i].x>>a[i].y;
+    }
+    int vsego=0;
+    int t=0;
+   int  minvs=100000000;
+    for (int i = 0; i < k;i++) {
+        vsego=0;
+        for (int j = 0; j < k;j++) {
+            if (pow(a[j].x - a[j].x, 2) + pow(a[j].y - a[i].y, 2) <= r * r)
+            {
+                vsego++;
+            }
+        }
+        
+            if (minvs>vsego){
+                t=i;
+                minvs=vsego;
+            }
+    
+    }
+    cout << "luchsaya tochka: ";
+    cout<< a[t].x<<" "<< a[t].y<<endl;
 }
+
 /*
-3
-5
-0 0
-1 2
--3 -4
-10 10*/
-/*1
-0
-0 0
-5 5*/
-/*
-5
-100
-12 20
--40 4
-35 2
-78 9
-1 1
-110 110*/
+ vvedite kol-vo tochek: 5
+ vvedite radius: 2
+ vvedite koordinati: 5 10
+ 0 0
+ 0 1
+ 1 0
+ 1 1
+ 1
+ 4
+ 4
+ 4
+ 4
+
+ vvedite kol-vo tochek: 3
+ vvedite radius: 1
+ vvedite koordinati: 0 0
+ 1 1
+ 2 3
+ 2
+ 2
+ 1
+ luchsaya tochka: 2 3
+ */
+ 
+ 
+
+
