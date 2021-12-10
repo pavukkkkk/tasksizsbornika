@@ -3,6 +3,10 @@ using namespace std;
 #include "fstream"
 #include "string"
 #include "cmath"
+ifstream in("input.txt");
+ofstream out("output.txt");
+int n;
+
 struct vec {
     string nazv;
     double cena, nizh, verh;
@@ -10,21 +14,26 @@ struct vec {
         return cena - cena / 100 * n;
 
     }
+    void inputc(){
+        in >> nazv >> cena >> nizh >> verh;
+    }
+    void outc(int n){
+        out<<nazv <<" "<< f(n)<<" " << nizh<<" " <<verh << endl;
+    }
 };
 int main()
 {
     vec* a = new vec[1000000];
-    ifstream in("input.txt");
-    ofstream out("output.txt");
+    
     int i = 0;
-    int n;
+    
     cout << "vvedite x%: ";
     cin >> n;
-    in >> a[i].nazv >> a[i].cena >> a[i].nizh >> a[i].verh;
+    a[i].inputc();
     while (!in.eof()) {
-        out<< a[i].nazv <<" "<<  a[i].f(n)<<" " << a[i].nizh<<" " << a[i].verh << endl;
+        a[i].outc(n);
         i++;
-        in >> a[i].nazv >> a[i].cena >> a[i].nizh >> a[i].verh;
+        a[i].inputc();
        
     }
     in.close();
