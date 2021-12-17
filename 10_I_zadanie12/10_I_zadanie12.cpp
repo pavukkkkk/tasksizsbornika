@@ -6,11 +6,8 @@ using namespace std;
 
 struct point {
     int x, y;
-    void inputx(){
-        cin>>x;
-    }
-    void inputy(){
-        cin>>y;
+    void inputxy(){
+        cin>>x>>y;
     }
     
 };
@@ -27,8 +24,7 @@ int main(){
     a[0].x = 0;
     a[0].y = 0;
     for (int i = 0; i < k;i++) {
-        a[i].inputx();
-        a[i].inputy();
+        a[i].inputxy();
     }
     int vsego=0;
     int t=0;
@@ -60,7 +56,6 @@ int main(){
  0 1
  1 0
  1 1
-
  luchsaya tochka: 5 10
  
  
@@ -74,5 +69,3 @@ int main(){
  */
  
  
-
-
